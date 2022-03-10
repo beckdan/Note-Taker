@@ -2,7 +2,7 @@ const fs = require('fs');
 const util = require('util');
 
 const readFileAsync = util.promisify(fs.readFile);
-const writeFielAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 class Save {
     constructor() {
