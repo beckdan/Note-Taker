@@ -12,7 +12,6 @@
     "express": "^4.16.4",
     "fs": "^0.0.1-security",
     "uuid": "^8.3.2",
-    "node": "^17.1.0",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client" 
+    "node": "^17.1.0"
   }
 }
