@@ -29,9 +29,8 @@ Project is created with:
 - [HTML]
 - [CSS]
 
-![Alt text](Public\assets\images\note-taker1.png "Home Screen")
-![Alt text](Public\assets\images\note-taker2.png "Notes Page")
-
+<img src="Public\assets\images\note-taker1.png" alt="Alt text" title="Home Screen">
+<img src="Public\assets\images\note-taker2.png" alt="Alt text" title="Notes Page">
 
 ## Authors
 
