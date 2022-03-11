@@ -1,6 +1,7 @@
 //Import Dependencies//
 const express = require('express');
-const htmlRoutes = require('./routes/htmlRoutes.js')
+const htmlRoutes = require('./routes/htmlRoutes')
+const apiRoutes = require('./routes/apiRoutes')
 
 //Initialize express//
 const app = express();
@@ -11,10 +12,8 @@ const PORT = process.env.PORT || 3000
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 //All static files being served from Public folder//
-app.use(express.static('public'))
-
-//Put API routes here//
-app.use('/', htmlRoutes)
-
+app.use(express.static('public'));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.listen(PORT, ()=> console.log(`Listening on PORT: ${PORT}`));
